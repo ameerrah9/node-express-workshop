@@ -19,7 +19,7 @@ const createUser = async (req, res, next) => {
         const result = await User.create(req.body)
         
         res
-        .status(200)
+        .status(201)
         .setHeader('Content-Type', 'application/json')
         .json(result)
     } catch (error) {

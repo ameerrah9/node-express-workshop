@@ -13,6 +13,7 @@ connectDB();
 const app = express();
 
 // Body parser
+/* A middleware that parses the body of the request and makes it available in the req.body object. */
 app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 5001;
@@ -35,3 +36,4 @@ process.on('unhandledRejection', (err, promise) => {
 });
 
 
+module.exports = server;
